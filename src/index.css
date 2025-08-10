@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+* {
+    transition: .3s
+}
+
+@layer components {
+    .max-w {
+        @apply max-w-[1420px] mx-auto px-9;
+    }
+
+    .max-content {
+        @apply mx-auto py-20
+    }
+
+    .button {
+        @apply px-8 py-2 rounded-xl
+    }
+
+    .interact {
+        @apply scale-100 hover:scale-105 active:scale-95 transition-all duration-200;
+    }
+
+    .input {
+        @apply w-full font-semibold bg-gray-100 rounded-xl outline-none border hover:border-orange-500 border-transparent;
+    }
+}
